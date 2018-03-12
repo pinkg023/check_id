@@ -19,7 +19,11 @@
   } else if (code.length != 10) {
     alert("內容的長度不正確，發出警告!");
   } else { 
-    document.getElementById("result").innerHTML = "通過驗證";
+    if(code.substring(1,2) == 1 ) {
+      document.getElementById("result").innerHTML = "某男通過驗證";
+    } else  {
+      document.getElementById("result").innerHTML = "某女通過驗證";
+    }
   }
 }
 </script>
